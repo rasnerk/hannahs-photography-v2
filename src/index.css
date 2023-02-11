@@ -23,3 +23,44 @@ body {
 .cursor-ev:hover{
   cursor: pointer;
 }
+
+/* Landing Page -- Sliding Photos Background */
+#bgslider { 
+  position: absolute;
+  top: 0;
+	overflow: hidden; 
+  height: 100vh;
+}
+#bgslider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+  height: 100vh;
+}
+#bgslider figure img {
+  position: relative;
+  /* left: 0; */
+  /* top: 0; */
+  /* bottom: 0; */
+  /* right: 0; */
+  /* width: 100%; */
+  /* height: 100%; */
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+} 
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
